@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Survey Form</h1>
+            <p>Feel Free To Answer The Questions Below Based On Your Own Experience And Opinion. If You Are Not
+                Convenient In Answering A Particular Question Please Skip It By Answering "No". Every Answer Would Be
+                Very Appreciated. Thank You For Your Time.</p>
+                <hr>
+        </div>
+        <form action="" id="myForm">
+            <div class="row">
+                <div class="col">
+                    <div class="input-div">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+                    </div>
+                    <div class="input-div">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="example@xyz.com" required>
+                    </div>
+                    <div class="input-div">
+                        <label for="phone">Your Phone Number</label>
+                        <input type="number" id="phone" name="phone" placeholder="0000000000" required>
+                    </div>
+                    <div class="input-div">
+                        <label for="live">Where Do You Live?</label>
+                        <select name="live" id="live" required>
+                            <option value="">Select</option>
+                            <option value="India">India</option>
+                            <option value="USA">USA</option>
+                            <option value="UK">UK</option>
+                        </select>
+                    </div>
+                    <div class="input-div">
+                        <fieldset>
+                            <legend>Age:</legend>
+                            <label><input type="radio" name="age" value="15-20" required> 15-20</label>
+                            <label><input type="radio" name="age" value="20-30" required> 20-30</label>
+                            <label><input type="radio" name="age" value="31-40" required> 31-40</label>
+                            <label><input type="radio" name="age" value="41-50" required> 41-50</label>
+                            <label><input type="radio" name="age" value="Prefer not to say" required> Prefer not to
+                                say</label>
+                        </fieldset>
+                    </div>
+                    <div class="input-div">
+                        <label for="codingRate">How would you rate your proficiency in coding</label>
+                        <label><input type="radio" name="rate" value="Beginner" required> Beginner</label>
+                        <label><input type="radio" name="rate" value="Intermediate" required> Intermediate</label>
+                        <label><input type="radio" name="rate" value="Advanced" required> Advanced</label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="input-div">
+                        <label for="codingContest">Have You Ever Appered in any coding contest?</label>
+                        <label><input type="radio" name="contest" value="Yes" required> Yes</label>
+                        <label><input type="radio" name="contest" value="No" required> No</label>
+                    </div>
+
+                    <div class="input-div">
+                        <label for="textfield1">Discuss what drives your passion for coding and outline your aspirations in the field.</label>
+                        <textarea  id="textfield1" name="textfield1" required></textarea>
+                    </div>
+
+                    <div class="input-div">
+                        <label for="textfield2">What are some of the challenges you face while coding?</label>
+                        <textarea  id="textfield2" name="textfield2" required></textarea>
+                    </div>
+
+                    <div class="input-div">
+                        <label for="textfield3">Please list the Data Structures you have a strong understanding of.</label>
+                        <textarea  id="textfield3" name="textfield3" required></textarea>
+                    </div>
+
+                    <div class="input-div">
+                        <button>Submit Form</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
